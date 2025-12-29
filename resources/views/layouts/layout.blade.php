@@ -50,7 +50,7 @@
             </ul>
         </div>
         <div class="navbar-end">
-            <a class="btn">Button</a>
+            <a href="/register" class="btn">Register</a>
         </div>
     </div>
     <main>
