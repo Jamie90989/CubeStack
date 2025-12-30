@@ -9,7 +9,7 @@ use App\Models\User;
 
 class AuthController extends Controller
 {
-     // Show register form
+    // Show register form
     public function showRegister()
     {
         return view('register');
@@ -22,13 +22,13 @@ class AuthController extends Controller
             'name' => 'required',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|min:6|max:100',
-            
-            'security_question_1' => 'required',
-            'security_answer_1' => 'required|max:100',
-            'security_question_2' => 'required',
-            'security_answer_2' => 'required|max:100',
-            'security_question_3' => 'required',
-            'security_answer_3' => 'required|max:100',
+
+            'securityQuestion1' => 'required',
+            'securityAnswer1' => 'required|max:100',
+            'securityQuestion2' => 'required',
+            'securityAnswer2' => 'required|max:100',
+            'securityQuestion3' => 'required',
+            'securityAnswer3' => 'required|max:100',
         ]);
 
         $user = User::create([
@@ -36,14 +36,14 @@ class AuthController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
 
-            'security_question_1' => $request->security_question_1,
-            'security_answer_1' => $request->security_answer_1,
+            'securityQuestion1' => $request->securityQuestion1,
+            'securityAnswer1' => $request->securityAnswer1,
 
-            'security_question_2' => $request->security_question_2,
-            'security_answer_2' => $request->security_answer_2,
+            'securityQuestion2' => $request->securityQuestion2,
+            'securityAnswer2' => $request->securityAnswer2,
 
-            'security_question_3' => $request->security_question_3,
-            'security_answer_3' => $request->security_answer_3,
+            'securityQuestion3' => $request->securityQuestion3,
+            'securityAnswer3' => $request->securityAnswer3,
         ]);
 
         Auth::login($user);

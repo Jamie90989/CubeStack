@@ -9,7 +9,7 @@
 <body>
     <div class="navbar bg-base-200 shadow-sm">
         <div class="navbar-start">
-          <a class="btn btn-ghost text-xl" href="/">
+            <a class="btn btn-ghost text-xl" href="/">
                 <img src="{{ asset('image/logo.jpg') }}" alt="CubeStack Logo" class="h-8 w-auto" />
 
             </a>
@@ -57,6 +57,7 @@
         @yield('content')
     </main>
     <footer></footer>
+
 </body>
 
 </html>
