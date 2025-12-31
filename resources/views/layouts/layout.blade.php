@@ -35,9 +35,10 @@
             </div>
         </div>
         <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-                <li class="bg-base-300 rounded-sm mr-5"><a>Information</a></li>
-                <li>
+    <ul class="menu menu-horizontal px-1">
+        <li class="bg-base-300 rounded-sm mr-5"><a>Information</a></li>
+
+         <li>
                     <details class="bg-base-300 rounded-sm ml-5">
                         <summary>Algorithms</summary>
                         <ul class="p-2 bg-neutral w-40 z-1">
@@ -46,9 +47,28 @@
                         </ul>
                     </details>
                 </li>
-                {{-- <li><a>Item 3</a></li> --}}
-            </ul>
-        </div>
+        {{-- @foreach($topCategories as $category)
+            <li>
+                <details class="bg-base-300 rounded-sm ml-5">
+                    <summary>{{ $category->name }}</summary>
+                    @if($category->children->count() > 0)
+                        <ul class="p-2 bg-neutral w-40 z-10">
+                            @foreach($category->children as $child)
+                                <li>
+                                    <a href="{{ route('categories.show', $child->id) }}">
+                                        {{ $child->name }}
+                                    </a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    @endif
+                </details>
+            </li>
+        @endforeach --}}
+
+        {{-- You can add other menu items here --}}
+    </ul>
+</div>
         <div class="navbar-end">
             <a href="/register" class="btn">Register</a>
         </div>

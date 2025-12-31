@@ -13,9 +13,8 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->unique();
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('securityQuestion1')->nullable();
             $table->string('securityAnswer1')->nullable();
@@ -23,6 +22,8 @@ return new class extends Migration
             $table->string('securityAnswer2')->nullable();
             $table->string('securityQuestion3')->nullable();
             $table->string('securityAnswer3')->nullable();
+            $table->boolean('hideStandardAlgs')->default(false); 
+            $table->boolean('isAdmin')->nullable()->default(false);
             $table->rememberToken();
             $table->timestamps();
         });

@@ -1,0 +1,149 @@
+[
+  {
+    "name": "Aa",
+    "algorithm": "x L2 D2 L' U' L D2 L' U L'",
+    "group": "Beginner PLL",
+    "image": "images/aaPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "Ab",
+    "algorithm": "x' L2 D2 L U L' D2 L U' L",
+    "group": "Beginner PLL",
+    "image": "images/abPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "F",
+    "algorithm": "R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R",
+    "group": "Adjacent",
+    "image": "images/fPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "Ga",
+    "algorithm": "R2 U R' U R' U' R U' R2 U' D R' U R D'",
+    "group": "G-perm",
+    "image": "images/gaPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "Gb",
+    "algorithm": "R' U' R U D' R2 U R' U R U' R U' R2 D",
+    "group": "G-perm",
+    "image": "images/gbPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "Gc",
+    "algorithm": "R2 U' R U' R U R' U R2 U D' R U' R' D",
+    "group": "G-perm",
+    "image": "images/gcPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "Gd",
+    "algorithm": "R U R' U' D R2 U' R U' R' U R' U R2 D'",
+    "group": "G-perm",
+    "image": "images/gdPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "Ja",
+    "algorithm": "x R2 F R F' R U2 r' U r U2",
+    "group": "Adjacent",
+    "image": "images/jaPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "Jb",
+    "algorithm": "R U R' F' R U R' U' R' F R2 U' R'",
+    "group": "Adjacent",
+    "image": "images/jbPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "Ra",
+    "algorithm": "R U' R' U' R U R D R' U' R D' R' U2 R'",
+    "group": "Adjacent",
+    "image": "images/raPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "Rb",
+    "algorithm": "R2 F R U R U' R' F' R U2 R' U2 R",
+    "group": "Adjacent",
+    "image": "images/rbPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "T",
+    "algorithm": "R U R' U' R' F R2 U' R' U' R U R' F'",
+    "group": "Adjacent",
+    "image": "images/tPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "E",
+    "algorithm": "x' L' U L D' L' U' L D L' U' L D' L' U L D",
+    "group": "Beginner PLL",
+    "image": "images/ePerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "Na",
+    "algorithm": "U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'",
+    "group": "Diagonal",
+    "image": "images/naPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "Nb",
+    "algorithm": "R' U R U' R' F' U' F R U R' F R' F' R U' R",
+    "group": "Diagonal",
+    "image": "images/nbPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "V",
+    "algorithm": "R' U R' U' y R' F' R2 U' R' U R' F R F",
+    "group": "Diagonal",
+    "image": "images/vPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "Y",
+    "algorithm": "F R U' R' U' R U R' F' R U R' U' R' F R F'",
+    "group": "Diagonal",
+    "image": "images/yPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "H",
+    "algorithm": "M2 U M2 U2 M2 U M2",
+    "group": "Beginner PLL",
+    "image": "images/hPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "Ua",
+    "algorithm": "R U' R U R U R U' R' U' R2",
+    "group": "Beginner PLL",
+    "image": "images/uaPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "Ub",
+    "algorithm": "R2 U R U R' U' R' U' R' U R'",
+    "group": "Beginner PLL",
+    "image": "images/ubPerm.png",
+    "is_standard": true
+  },
+  {
+    "name": "Z",
+    "algorithm": "M' U M2 U M2 U M' U2 M2",
+    "group": "Beginner PLL",
+    "image": "images/zPerm.png",
+    "is_standard": true
+  }
+]

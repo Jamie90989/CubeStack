@@ -27,6 +27,8 @@ class User extends Authenticatable
         'securityAnswer2',
         'securityQuestion3',
         'securityAnswer3',
+        'hideStandardAlgs',
+        'isAdmin',
     ];
 
     /**

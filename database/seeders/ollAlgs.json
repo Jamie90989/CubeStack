@@ -1,0 +1,360 @@
+[
+  {
+    "name": "Sune",
+    "algorithm": "R U R' U R U2 R'",
+    "group": "Oriented Edges",
+    "image": "images/sune.png",
+    "is_standard": true
+  },
+  {
+    "name": "Anti-Sune",
+    "algorithm": "R U2 R' U' R U' R'",
+    "group": "Oriented Edges",
+    "image": "images/anti-sune.png",
+    "is_standard": true
+  },
+  {
+    "name": "Cross",
+    "algorithm": "R U2 R' U' R U R' U' R U' R'",
+    "group": "Oriented Edges",
+    "image": "images/cross.png",
+    "is_standard": true
+  },
+  {
+    "name": "Bruno",
+    "algorithm": "R U2 R2 U' R2 U' R2 U2 R",
+    "group": "Oriented Edges",
+    "image": "images/bruno.png",
+    "is_standard": true
+  },
+  {
+    "name": "Chameleon",
+    "algorithm": "r U R' U' r' F R F'",
+    "group": "Oriented Edges",
+    "image": "images/chameleon.png",
+    "is_standard": true
+  },
+  {
+    "name": "Headlights",
+    "algorithm": "R2 D R' U2 R D' R' U2 R'",
+    "group": "Oriented Edges",
+    "image": "images/headlights.png",
+    "is_standard": true
+  },
+  {
+    "name": "Bowtie",
+    "algorithm": "F R' F' r U R U' r'",
+    "group": "Oriented Edges",
+    "image": "images/bowtie.png",
+    "is_standard": true
+  },
+  {
+    "name": "T",
+    "algorithm": "R U R' U' R' F R F'",
+    "group": "T-Shapes",
+    "image": "images/t.png",
+    "is_standard": true
+  },
+  {
+    "name": "Key",
+    "algorithm": "F R U R' U' F'",
+    "group": "T-Shapes",
+    "image": "images/key.png",
+    "is_standard": true
+  },
+  {
+    "name": "Righty-Square",
+    "algorithm": "r U2 R' U' R U' r'",
+    "group": "Squares",
+    "image": "images/righty-square.png",
+    "is_standard": true
+  },
+  {
+    "name": "Lefty-Square",
+    "algorithm": "l' U2 L U L' U l",
+    "group": "Squares",
+    "image": "images/lefty-square.png",
+    "is_standard": true
+  },
+  {
+    "name": "Arrow",
+    "algorithm": "r U R' U' r' R U R U' R'",
+    "group": "Solved Corners",
+    "image": "images/arrow.png",
+    "is_standard": true
+  },
+  {
+    "name": "H",
+    "algorithm": "R U R' U' M' U R U' r'",
+    "group": "Solved Corners",
+    "image": "images/h.png",
+    "is_standard": true
+  },
+  {
+    "name": "Seeing Headlights",
+    "algorithm": "R' U' R' F R F' U R",
+    "group": "C-Shapes",
+    "image": "images/seeing-headlights.png",
+    "is_standard": true
+  },
+  {
+    "name": "City",
+    "algorithm": "R U R2 U' R' F R U R U' F'",
+    "group": "C-Shapes",
+    "image": "images/city.png",
+    "is_standard": true
+  },
+  {
+    "name": "P",
+    "algorithm": "f R U R' U' f'",
+    "group": "P-Shapes",
+    "image": "images/p.png",
+    "is_standard": true
+  },
+  {
+    "name": "Inverse P",
+    "algorithm": "f' L' U' L U f",
+    "group": "P-Shapes",
+    "image": "images/inverse-p.png",
+    "is_standard": true
+  },
+  {
+    "name": "Couch",
+    "algorithm": "R' U' F U R U' R' F' R",
+    "group": "P-Shapes",
+    "image": "images/couch.png",
+    "is_standard": true
+  },
+  {
+    "name": "Anti Couch",
+    "algorithm": "L U F' U' L' U L F L'",
+    "group": "P-Shapes",
+    "image": "images/anti-couch.png",
+    "is_standard": true
+  },
+  {
+    "name": "Mounted Fish",
+    "algorithm": "F R U' R' U' R U R' F'",
+    "group": "Fishes",
+    "image": "images/mounted-fish.png",
+    "is_standard": true
+  },
+  {
+    "name": "Fish Salad",
+    "algorithm": "R U2 R2 F R F' R U2 R'",
+    "group": "Fishes",
+    "image": "images/fish-salad.png",
+    "is_standard": true
+  },
+  {
+    "name": "Kite",
+    "algorithm": "R U R' U' R' F R2 U R' U' F'",
+    "group": "Fishes",
+    "image": "images/kite.png",
+    "is_standard": true
+  },
+  {
+    "name": "Anti-kite",
+    "algorithm": "R U R' U R' F R F' R U2 R'",
+    "group": "Fishes",
+    "image": "images/anti-kite.png",
+    "is_standard": true
+  },
+  {
+    "name": "Mario",
+    "algorithm": "R U R' U R U' R' U' R' F R F'",
+    "group": "W-Shapes",
+    "image": "images/mario.png",
+    "is_standard": true
+  },
+  {
+    "name": "Wario",
+    "algorithm": "L' U' L U' L' U L U L F' L' F",
+    "group": "W-Shapes",
+    "image": "images/wario.png",
+    "is_standard": true
+  },
+  {
+    "name": "Poodle",
+    "algorithm": "R U R' U R U2 R' F R U R' U' F'",
+    "group": "Akward Shapes",
+    "image": "images/poodle.png",
+    "is_standard": true
+  },
+  {
+    "name": "Anti-Poodle",
+    "algorithm": "R' U' R U' R' U2 R F R U R' U' F'",
+    "group": "Akward Shapes",
+    "image": "images/anti-poodle.png",
+    "is_standard": true
+  },
+  {
+    "name": "WTF",
+    "algorithm": "F R' F R2 U' R' U' R U R' F2",
+    "group": "Akward Shapes",
+    "image": "images/wtf.png",
+    "is_standard": true
+  },
+  {
+    "name": "Anti-WTF",
+    "algorithm": "R U R' U' R U' R' F' U' F R U R'",
+    "group": "Akward Shapes",
+    "image": "images/anti-wtf.png",
+    "is_standard": true
+  },
+  {
+    "name": "Breakneck",
+    "algorithm": "F R U R' U' R U R' U' F'",
+    "group": "L-Shapes",
+    "image": "images/breakneck.png",
+    "is_standard": true
+  },
+  {
+    "name": "Anti-Breakneck",
+    "algorithm": "F' L' U' L U L' U' L U F",
+    "group": "L-Shapes",
+    "image": "images/anti-breakneck.png",
+    "is_standard": true
+  },
+  {
+    "name": "Frying Pan",
+    "algorithm": "l' U2 L U L' U' L U L' U l",
+    "group": "L-Shapes",
+    "image": "images/frying-pan.png",
+    "is_standard": true
+  },
+  {
+    "name": "Anti-Frying Pan",
+    "algorithm": "r U2 R' U' R U R' U' R U' r'",
+    "group": "L-Shapes",
+    "image": "images/anti-frying-pan.png",
+    "is_standard": true
+  },
+  {
+    "name": "Front Squeezy",
+    "algorithm": "r' U r2 U' r2 U' r2 U r'",
+    "group": "L-Shapes",
+    "image": "images/front-squeezy.png",
+    "is_standard": true
+  },
+  {
+    "name": "Back Squeezy",
+    "algorithm": "r U' r2 U r2 U r2 U' r",
+    "group": "L-Shapes",
+    "image": "images/back-squeezy.png",
+    "is_standard": true
+  },
+  {
+    "name": "Blank",
+    "algorithm": "R U2 R2 F R F' U2 R' F R F'",
+    "group": "Dot-Cases",
+    "image": "images/blank.png",
+    "is_standard": true
+  },
+  {
+    "name": "Zamboni",
+    "algorithm": "r U r' U2 r U2 R' U2 R U' r'",
+    "group": "Dot-Cases",
+    "image": "images/zamboni.png",
+    "is_standard": true
+  },
+  {
+    "name": "Slash",
+    "algorithm": "F R' F' R2 r' U R U' R' U' M'",
+    "group": "Dot-Cases",
+    "image": "images/slash.png",
+    "is_standard": true
+  },
+  {
+    "name": "X",
+    "algorithm": "r U R' U' M2 U R U' R' U' M'",
+    "group": "Dot-Cases",
+    "image": "images/x.png",
+    "is_standard": true
+  },
+  {
+    "name": "Bunny",
+    "algorithm": "r' R U R U R' U' M' R' F R F'",
+    "group": "Dot-Cases",
+    "image": "images/bunny.png",
+    "is_standard": true
+  },
+  {
+    "name": "Crown",
+    "algorithm": "r U R' U R U2 r2 U' R U' R' U2 r",
+    "group": "Dot-Cases",
+    "image": "images/crown.png",
+    "is_standard": true
+  },
+  {
+    "name": "Dash-Left",
+    "algorithm": "r' R2 U R' U r U2 r' U M'",
+    "group": "Dot-Cases",
+    "image": "images/dash-left.png",
+    "is_standard": true
+  },
+  {
+    "name": "Dash-Right",
+    "algorithm": "M U' r U2 r' U' R U' R' M'",
+    "group": "Dot-Cases",
+    "image": "images/dash-right.png",
+    "is_standard": true
+  },
+  {
+    "name": "Ant",
+    "algorithm": "F U R U' R' U R U' R' F'",
+    "group": "Lines",
+    "image": "images/ant.png",
+    "is_standard": true
+  },
+  {
+    "name": "Rice Cooker",
+    "algorithm": "R U R' U R U' B U' B' R'",
+    "group": "Lines",
+    "image": "images/rice-cooker.png",
+    "is_standard": true
+  },
+  {
+    "name": "Streetlights",
+    "algorithm": "r' U' r U' R' U R U' R' U R r' U r",
+    "group": "Lines",
+    "image": "images/streetlights.png",
+    "is_standard": true
+  },
+  {
+    "name": "Highway",
+    "algorithm": "R U2 R2 U' R U' R' U2 F R F'",
+    "group": "Lines",
+    "image": "images/highway.png",
+    "is_standard": true
+  },
+  {
+    "name": "Squeegee",
+    "algorithm": "R U R' U R U' R' U' R' F R F'",
+    "group": "Knight Moves",
+    "image": "images/squeegee.png",
+    "is_standard": true
+  },
+  {
+    "name": "Anti-squeegee",
+    "algorithm": "L' U' L U' L' U L U L F' L' F",
+    "group": "Knight Moves",
+    "image": "images/anti-squeegee.png",
+    "is_standard": true
+  },
+  {
+    "name": "Gun",
+    "algorithm": "L' U' L U' L' U L U L F' L' F",
+    "group": "Knight Moves",
+    "image": "images/gun.png",
+    "is_standard": true
+  },
+  {
+    "name": "Anti-Gun",
+    "algorithm": "L' U' L U' L' U L U L F' L' F",
+    "group": "Knight Moves",
+    "image": "images/anti-gun.png",
+    "is_standard": true
+  }
+]
+
