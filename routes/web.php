@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AlgorithmController;
 
 Route::get('/', function () {
     return view('home');
@@ -18,6 +19,9 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/account', function () {
     return view('account');
 })->middleware('auth');
+
+Route::get('/algorithms', [AlgorithmController::class, 'index'])->name('algorithms.index');
+
 
 
 

@@ -3,147 +3,147 @@
     "name": "Aa",
     "algorithm": "x L2 D2 L' U' L D2 L' U L'",
     "group": "Beginner PLL",
-    "image": "images/pll/aaPerm.png",
+    "image": "image/pll/aaPerm.png",
     "is_standard": true
   },
   {
     "name": "Ab",
     "algorithm": "x' L2 D2 L U L' D2 L U' L",
     "group": "Beginner PLL",
-    "image": "images/pll/abPerm.png",
+    "image": "image/pll/abPerm.png",
     "is_standard": true
   },
   {
     "name": "F",
     "algorithm": "R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R",
     "group": "Adjacent",
-    "image": "images/pll/fPerm.png",
+    "image": "image/pll/fPerm.png",
     "is_standard": true
   },
   {
     "name": "Ga",
     "algorithm": "R2 U R' U R' U' R U' R2 U' D R' U R D'",
     "group": "G-perm",
-    "image": "images/pll/gaPerm.png",
+    "image": "image/pll/gaPerm.png",
     "is_standard": true
   },
   {
     "name": "Gb",
     "algorithm": "R' U' R U D' R2 U R' U R U' R U' R2 D",
     "group": "G-perm",
-    "image": "images/pll/gbPerm.png",
+    "image": "image/pll/gbPerm.png",
     "is_standard": true
   },
   {
     "name": "Gc",
     "algorithm": "R2 U' R U' R U R' U R2 U D' R U' R' D",
     "group": "G-perm",
-    "image": "images/pll/gcPerm.png",
+    "image": "image/pll/gcPerm.png",
     "is_standard": true
   },
   {
     "name": "Gd",
     "algorithm": "R U R' U' D R2 U' R U' R' U R' U R2 D'",
     "group": "G-perm",
-    "image": "images/pll/gdPerm.png",
+    "image": "image/pll/gdPerm.png",
     "is_standard": true
   },
   {
     "name": "Ja",
     "algorithm": "x R2 F R F' R U2 r' U r U2",
     "group": "Adjacent",
-    "image": "images/pll/jaPerm.png",
+    "image": "image/pll/jaPerm.png",
     "is_standard": true
   },
   {
     "name": "Jb",
     "algorithm": "R U R' F' R U R' U' R' F R2 U' R'",
     "group": "Adjacent",
-    "image": "images/pll/jbPerm.png",
+    "image": "image/pll/jbPerm.png",
     "is_standard": true
   },
   {
     "name": "Ra",
     "algorithm": "R U' R' U' R U R D R' U' R D' R' U2 R'",
     "group": "Adjacent",
-    "image": "images/pll/raPerm.png",
+    "image": "image/pll/raPerm.png",
     "is_standard": true
   },
   {
     "name": "Rb",
     "algorithm": "R2 F R U R U' R' F' R U2 R' U2 R",
     "group": "Adjacent",
-    "image": "images/pll/rbPerm.png",
+    "image": "image/pll/rbPerm.png",
     "is_standard": true
   },
   {
     "name": "T",
     "algorithm": "R U R' U' R' F R2 U' R' U' R U R' F'",
     "group": "Adjacent",
-    "image": "images/pll/tPerm.png",
+    "image": "image/pll/tPerm.png",
     "is_standard": true
   },
   {
     "name": "E",
     "algorithm": "x' L' U L D' L' U' L D L' U' L D' L' U L D",
     "group": "Beginner PLL",
-    "image": "images/pll/ePerm.png",
+    "image": "image/pll/ePerm.png",
     "is_standard": true
   },
   {
     "name": "Na",
     "algorithm": "U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'",
     "group": "Diagonal",
-    "image": "images/pll/naPerm.png",
+    "image": "image/pll/naPerm.png",
     "is_standard": true
   },
   {
     "name": "Nb",
     "algorithm": "R' U R U' R' F' U' F R U R' F R' F' R U' R",
     "group": "Diagonal",
-    "image": "images/pll/nbPerm.png",
+    "image": "image/pll/nbPerm.png",
     "is_standard": true
   },
   {
     "name": "V",
     "algorithm": "R' U R' U' y R' F' R2 U' R' U R' F R F",
     "group": "Diagonal",
-    "image": "images/pll/vPerm.png",
+    "image": "image/pll/vPerm.png",
     "is_standard": true
   },
   {
     "name": "Y",
     "algorithm": "F R U' R' U' R U R' F' R U R' U' R' F R F'",
     "group": "Diagonal",
-    "image": "images/pll/yPerm.png",
+    "image": "image/pll/yPerm.png",
     "is_standard": true
   },
   {
     "name": "H",
     "algorithm": "M2 U M2 U2 M2 U M2",
     "group": "Beginner PLL",
-    "image": "images/pll/hPerm.png",
+    "image": "image/pll/hPerm.png",
     "is_standard": true
   },
   {
     "name": "Ua",
     "algorithm": "R U' R U R U R U' R' U' R2",
     "group": "Beginner PLL",
-    "image": "images/pll/uaPerm.png",
+    "image": "image/pll/uaPerm.png",
     "is_standard": true
   },
   {
     "name": "Ub",
     "algorithm": "R2 U R U R' U' R' U' R' U R'",
     "group": "Beginner PLL",
-    "image": "images/pll/ubPerm.png",
+    "image": "image/pll/ubPerm.png",
     "is_standard": true
   },
   {
     "name": "Z",
     "algorithm": "M' U M2 U M2 U M' U2 M2",
     "group": "Beginner PLL",
-    "image": "images/pll/zPerm.png",
+    "image": "image/pll/zPerm.png",
     "is_standard": true
   }
 ]

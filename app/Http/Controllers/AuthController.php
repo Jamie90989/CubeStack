@@ -37,13 +37,13 @@ class AuthController extends Controller
             'password' => Hash::make($request->password),
 
             'securityQuestion1' => $request->securityQuestion1,
-            'securityAnswer1' => $request->securityAnswer1,
+            'securityAnswer1' => Hash::make($request->securityAnswer1),
 
             'securityQuestion2' => $request->securityQuestion2,
-            'securityAnswer2' => $request->securityAnswer2,
+            'securityAnswer2' => Hash::make($request->securityAnswer2),
 
             'securityQuestion3' => $request->securityQuestion3,
-            'securityAnswer3' => $request->securityAnswer3,
+            'securityAnswer3' => Hash::make($request->securityAnswer3),
         ]);
 
         Auth::login($user);

@@ -3,399 +3,399 @@
     "name": "Sune",
     "algorithm": "R U R' U R U2 R'",
     "group": "Oriented Edges",
-    "image": "images/oll/sune.png",
+    "image": "image/oll/sune.png",
     "is_standard": true
   },
   {
     "name": "Anti-Sune",
     "algorithm": "R U2 R' U' R U' R'",
     "group": "Oriented Edges",
-    "image": "images/oll/antiSune.png",
+    "image": "image/oll/antiSune.png",
     "is_standard": true
   },
   {
     "name": "Cross",
     "algorithm": "R U2 R' U' R U R' U' R U' R'",
     "group": "Oriented Edges",
-    "image": "images/oll/cross.png",
+    "image": "image/oll/cross.png",
     "is_standard": true
   },
   {
     "name": "Bruno",
     "algorithm": "R U2 R2 U' R2 U' R2 U2 R",
     "group": "Oriented Edges",
-    "image": "images/oll/bruno.png",
+    "image": "image/oll/bruno.png",
     "is_standard": true
   },
   {
     "name": "Chameleon",
     "algorithm": "r U R' U' r' F R F'",
     "group": "Oriented Edges",
-    "image": "images/oll/chameleon.png",
+    "image": "image/oll/chameleon.png",
     "is_standard": true
   },
   {
     "name": "Headlights",
     "algorithm": "R2 D R' U2 R D' R' U2 R'",
     "group": "Oriented Edges",
-    "image": "images/oll/headlights.png",
+    "image": "image/oll/headlights.png",
     "is_standard": true
   },
   {
     "name": "Bowtie",
     "algorithm": "F R' F' r U R U' r'",
     "group": "Oriented Edges",
-    "image": "images/oll/bowtie.png",
+    "image": "image/oll/bowtie.png",
     "is_standard": true
   },
   {
     "name": "Lightning",
     "algorithm": "r U R' U R U2 r'",
     "group": "Lightning Bolts",
-    "image": "images/oll/lightning.png",
+    "image": "image/oll/lightning.png",
     "is_standard": true
   },
   {
     "name": "Reverse Lightning",
     "algorithm": "l' U' L U' L' U2 l",
     "group": "Lightning Bolts",
-    "image": "images/oll/reverseLightning.png",
+    "image": "image/oll/reverseLightning.png",
     "is_standard": true
   },
   {
     "name": "Downstairs",
     "algorithm": "r U R' U R' F R F' R U2 r'",
     "group": "Lightning Bolts",
-    "image": "images/oll/downstairs.png",
+    "image": "image/oll/downstairs.png",
     "is_standard": true
   },
   {
     "name": "Upstairs",
     "algorithm": "M' R' U' R U' R' U2 R U' R r'",
     "group": "Lightning Bolts",
-    "image": "images/oll/upstairs.png",
+    "image": "image/oll/upstairs.png",
     "is_standard": true
   },
   {
     "name": "Big Lightning",
     "algorithm": "R' F R U R' U' F' U R",
     "group": "Lightning Bolts",
-    "image": "images/oll/bigLightning.png",
+    "image": "image/oll/bigLightning.png",
     "is_standard": true
   },
   {
     "name": "Lefty Big Lightning",
     "algorithm": "L F' L' U' L U F U' L'",
     "group": "Lightning Bolts",
-    "image": "images/oll/leftyBigLightning.png",
+    "image": "image/oll/leftyBigLightning.png",
     "is_standard": true
   },
   {
     "name": "T",
     "algorithm": "R U R' U' R' F R F'",
     "group": "T-Shapes",
-    "image": "images/oll/t.png",
+    "image": "image/oll/t.png",
     "is_standard": true
   },
   {
     "name": "Key",
     "algorithm": "F R U R' U' F'",
     "group": "T-Shapes",
-    "image": "images/oll/key.png",
+    "image": "image/oll/key.png",
     "is_standard": true
   },
   {
     "name": "Righty-Square",
     "algorithm": "r U2 R' U' R U' r'",
     "group": "Squares",
-    "image": "images/oll/rightySquare.png",
+    "image": "image/oll/rightySquare.png",
     "is_standard": true
   },
   {
     "name": "Lefty-Square",
     "algorithm": "l' U2 L U L' U l",
     "group": "Squares",
-    "image": "images/oll/leftySquare.png",
+    "image": "image/oll/leftySquare.png",
     "is_standard": true
   },
   {
     "name": "Arrow",
     "algorithm": "r U R' U' r' R U R U' R'",
     "group": "Solved Corners",
-    "image": "images/oll/arrow.png",
+    "image": "image/oll/arrow.png",
     "is_standard": true
   },
   {
     "name": "H",
     "algorithm": "R U R' U' M' U R U' r'",
     "group": "Solved Corners",
-    "image": "images/oll/h.png",
+    "image": "image/oll/h.png",
     "is_standard": true
   },
   {
     "name": "Seeing Headlights",
     "algorithm": "R' U' R' F R F' U R",
     "group": "C-Shapes",
-    "image": "images/oll/seeingHeadlights.png",
+    "image": "image/oll/seeingHeadlights.png",
     "is_standard": true
   },
   {
     "name": "City",
     "algorithm": "R U R2 U' R' F R U R U' F'",
     "group": "C-Shapes",
-    "image": "images/oll/city.png",
+    "image": "image/oll/city.png",
     "is_standard": true
   },
   {
     "name": "P",
     "algorithm": "f R U R' U' f'",
     "group": "P-Shapes",
-    "image": "images/oll/p.png",
+    "image": "image/oll/p.png",
     "is_standard": true
   },
   {
     "name": "Inverse P",
     "algorithm": "f' L' U' L U f",
     "group": "P-Shapes",
-    "image": "images/oll/inverseP.png",
+    "image": "image/oll/inverseP.png",
     "is_standard": true
   },
   {
     "name": "Couch",
     "algorithm": "R' U' F U R U' R' F' R",
     "group": "P-Shapes",
-    "image": "images/oll/couch.png",
+    "image": "image/oll/couch.png",
     "is_standard": true
   },
   {
     "name": "Anti Couch",
     "algorithm": "L U F' U' L' U L F L'",
     "group": "P-Shapes",
-    "image": "images/oll/antiCouch.png",
+    "image": "image/oll/antiCouch.png",
     "is_standard": true
   },
   {
     "name": "Mounted Fish",
     "algorithm": "F R U' R' U' R U R' F'",
     "group": "Fishes",
-    "image": "images/oll/mountedFish.png",
+    "image": "image/oll/mountedFish.png",
     "is_standard": true
   },
   {
     "name": "Fish Salad",
     "algorithm": "R U2 R2 F R F' R U2 R'",
     "group": "Fishes",
-    "image": "images/oll/fishSalad.png",
+    "image": "image/oll/fishSalad.png",
     "is_standard": true
   },
   {
     "name": "Kite",
     "algorithm": "R U R' U' R' F R2 U R' U' F'",
     "group": "Fishes",
-    "image": "images/oll/kite.png",
+    "image": "image/oll/kite.png",
     "is_standard": true
   },
   {
     "name": "Anti-kite",
     "algorithm": "R U R' U R' F R F' R U2 R'",
     "group": "Fishes",
-    "image": "images/oll/antiKite.png",
+    "image": "image/oll/antiKite.png",
     "is_standard": true
   },
   {
     "name": "Mario",
     "algorithm": "R U R' U R U' R' U' R' F R F'",
     "group": "W-Shapes",
-    "image": "images/oll/mario.png",
+    "image": "image/oll/mario.png",
     "is_standard": true
   },
   {
     "name": "Wario",
     "algorithm": "L' U' L U' L' U L U L F' L' F",
     "group": "W-Shapes",
-    "image": "images/oll/wario.png",
+    "image": "image/oll/wario.png",
     "is_standard": true
   },
   {
     "name": "Poodle",
     "algorithm": "R U R' U R U2 R' F R U R' U' F'",
     "group": "Akward Shapes",
-    "image": "images/oll/poodle.png",
+    "image": "image/oll/poodle.png",
     "is_standard": true
   },
   {
     "name": "Anti-Poodle",
     "algorithm": "R' U' R U' R' U2 R F R U R' U' F'",
     "group": "Akward Shapes",
-    "image": "images/oll/antiPoodle.png",
+    "image": "image/oll/antiPoodle.png",
     "is_standard": true
   },
   {
     "name": "WTF",
     "algorithm": "F R' F R2 U' R' U' R U R' F2",
     "group": "Akward Shapes",
-    "image": "images/oll/wtf.png",
+    "image": "image/oll/wtf.png",
     "is_standard": true
   },
   {
     "name": "Anti-WTF",
     "algorithm": "R U R' U' R U' R' F' U' F R U R'",
     "group": "Akward Shapes",
-    "image": "images/oll/antiWtf.png",
+    "image": "image/oll/antiWtf.png",
     "is_standard": true
   },
   {
     "name": "Breakneck",
     "algorithm": "F R U R' U' R U R' U' F'",
     "group": "L-Shapes",
-    "image": "images/oll/breakneck.png",
+    "image": "image/oll/breakneck.png",
     "is_standard": true
   },
   {
     "name": "Anti-Breakneck",
     "algorithm": "F' L' U' L U L' U' L U F",
     "group": "L-Shapes",
-    "image": "images/oll/antiBreakneck.png",
+    "image": "image/oll/antiBreakneck.png",
     "is_standard": true
   },
   {
     "name": "Frying Pan",
     "algorithm": "l' U2 L U L' U' L U L' U l",
     "group": "L-Shapes",
-    "image": "images/oll/fryingPan.png",
+    "image": "image/oll/fryingPan.png",
     "is_standard": true
   },
   {
     "name": "Anti-Frying Pan",
     "algorithm": "r U2 R' U' R U R' U' R U' r'",
     "group": "L-Shapes",
-    "image": "images/oll/antiFryingPan.png",
+    "image": "image/oll/antiFryingPan.png",
     "is_standard": true
   },
   {
     "name": "Front Squeezy",
     "algorithm": "r' U r2 U' r2 U' r2 U r'",
     "group": "L-Shapes",
-    "image": "images/oll/frontSqueezy.png",
+    "image": "image/oll/frontSqueezy.png",
     "is_standard": true
   },
   {
     "name": "Back Squeezy",
     "algorithm": "r U' r2 U r2 U r2 U' r",
     "group": "L-Shapes",
-    "image": "images/oll/backSqueezy.png",
+    "image": "image/oll/backSqueezy.png",
     "is_standard": true
   },
   {
     "name": "Blank",
     "algorithm": "R U2 R2 F R F' U2 R' F R F'",
     "group": "Dot-Cases",
-    "image": "images/oll/blank.png",
+    "image": "image/oll/blank.png",
     "is_standard": true
   },
   {
     "name": "Zamboni",
     "algorithm": "r U r' U2 r U2 R' U2 R U' r'",
     "group": "Dot-Cases",
-    "image": "images/oll/zamboni.png",
+    "image": "image/oll/zamboni.png",
     "is_standard": true
   },
   {
     "name": "Slash",
     "algorithm": "F R' F' R2 r' U R U' R' U' M'",
     "group": "Dot-Cases",
-    "image": "images/oll/slash.png",
+    "image": "image/oll/slash.png",
     "is_standard": true
   },
   {
     "name": "X",
     "algorithm": "r U R' U' M2 U R U' R' U' M'",
     "group": "Dot-Cases",
-    "image": "images/oll/x.png",
+    "image": "image/oll/x.png",
     "is_standard": true
   },
   {
     "name": "Bunny",
     "algorithm": "r' R U R U R' U' M' R' F R F'",
     "group": "Dot-Cases",
-    "image": "images/oll/bunny.png",
+    "image": "image/oll/bunny.png",
     "is_standard": true
   },
   {
     "name": "Crown",
     "algorithm": "r U R' U R U2 r2 U' R U' R' U2 r",
     "group": "Dot-Cases",
-    "image": "images/oll/crown.png",
+    "image": "image/oll/crown.png",
     "is_standard": true
   },
   {
     "name": "Dash-Left",
     "algorithm": "r' R2 U R' U r U2 r' U M'",
     "group": "Dot-Cases",
-    "image": "images/oll/dashLeft.png",
+    "image": "image/oll/dashLeft.png",
     "is_standard": true
   },
   {
     "name": "Dash-Right",
     "algorithm": "M U' r U2 r' U' R U' R' M'",
     "group": "Dot-Cases",
-    "image": "images/oll/dashRight.png",
+    "image": "image/oll/dashRight.png",
     "is_standard": true
   },
   {
     "name": "Ant",
     "algorithm": "F U R U' R' U R U' R' F'",
     "group": "Lines",
-    "image": "images/oll/ant.png",
+    "image": "image/oll/ant.png",
     "is_standard": true
   },
   {
     "name": "Rice Cooker",
     "algorithm": "R U R' U R U' B U' B' R'",
     "group": "Lines",
-    "image": "images/oll/riceCooker.png",
+    "image": "image/oll/riceCooker.png",
     "is_standard": true
   },
   {
     "name": "Streetlights",
     "algorithm": "r' U' r U' R' U R U' R' U R r' U r",
     "group": "Lines",
-    "image": "images/oll/streetlights.png",
+    "image": "image/oll/streetlights.png",
     "is_standard": true
   },
   {
     "name": "Highway",
     "algorithm": "R U2 R2 U' R U' R' U2 F R F'",
     "group": "Lines",
-    "image": "images/oll/highway.png",
+    "image": "image/oll/highway.png",
     "is_standard": true
   },
   {
     "name": "Squeegee",
     "algorithm": "R U R' U R U' R' U' R' F R F'",
     "group": "Knight Moves",
-    "image": "images/oll/squeegee.png",
+    "image": "image/oll/squeegee.png",
     "is_standard": true
   },
   {
     "name": "Anti-squeegee",
     "algorithm": "L' U' L U' L' U L U L F' L' F",
     "group": "Knight Moves",
-    "image": "images/oll/antiSqueegee.png",
+    "image": "image/oll/antiSqueegee.png",
     "is_standard": true
   },
   {
     "name": "Gun",
     "algorithm": "L' U' L U' L' U L U L F' L' F",
     "group": "Knight Moves",
-    "image": "images/oll/gun.png",
+    "image": "image/oll/gun.png",
     "is_standard": true
   },
   {
     "name": "Anti-Gun",
     "algorithm": "L' U' L U' L' U L U L F' L' F",
     "group": "Knight Moves",
-    "image": "images/oll/antiGun.png",
+    "image": "image/oll/antiGun.png",
     "is_standard": true
   }
 ]
