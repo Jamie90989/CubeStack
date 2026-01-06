@@ -12,7 +12,7 @@ class CategoryController extends Controller
     {
         $categories = Category::whereNull('parent_category_id')->get();
 
-    return view('createCategory', compact('categories'));
+        return view('createCategory', compact('categories'));
     }
 
     public function store(Request $request)
@@ -34,5 +34,64 @@ class CategoryController extends Controller
 
         return redirect()->route('algorithms.index')
             ->with('success', 'Category added successfully!');
+    }
+
+    // Show edit form for selected category
+    public function edit(Request $request)
+    {
+        $categoryId = $request->query('category_id');
+
+        if (!$categoryId) {
+            return redirect()->back()->with('error', 'Please select a category to edit.');
+        }
+
+        $category = Category::findOrFail($categoryId);
+
+        if ($category->user_id !== Auth::id()) {
+            abort(403);
+        }
+
+        // Parent categories for dropdown, exclude current category
+        $categories = Category::where('user_id', Auth::id())
+            ->orWhere('is_standard', true)
+            ->whereNull('parent_category_id')
+            ->where('id', '!=', $category->id)
+            ->with('children')
+            ->get();
+
+        return view('editCategory', compact('category', 'categories'));
+    }
+
+    // Update category
+    public function update(Request $request, Category $category)
+    {
+        if ($category->user_id !== Auth::id()) abort(403);
+
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'parent_category_id' => 'nullable|exists:categories,id',
+        ]);
+
+        $parent = Category::find($request->parent_category_id);
+
+        $category->update([
+            'name' => $request->name,
+            'parent_category_id' => $request->parent_category_id,
+            'category_level' => $parent ? $parent->category_level + 1 : 1,
+        ]);
+
+        return redirect('/')->with('success', 'Category updated successfully!');
+    }
+
+    // Delete category
+    public function destroy(Category $category)
+    {
+        if ($category->user_id !== Auth::id()) abort(403);
+
+        // Optionally: delete algorithms under this category if needed
+
+        $category->delete();
+
+        return redirect('/')->with('success', 'Category deleted successfully!');
     }
 }

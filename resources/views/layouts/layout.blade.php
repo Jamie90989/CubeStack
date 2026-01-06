@@ -50,17 +50,17 @@
                                             {{ $category->name }}
                                         </a>
                                     @endif
+                                </li>
+                            @endforeach
+                            @auth
+                                <li class="mt-2">
+                                    <a href="{{ route('categories.create') }}" class="text-primary">
+                                        + Add Category
+                                    </a>
+                                </li>
+                            @endauth
+                        </ul>
                     </li>
-                    @endforeach
-                    @auth
-                                    <li class="mt-2">
-                                        <a href="{{ route('categories.create') }}" class="text-primary">
-                                            + Add Category
-                                        </a>
-                                    </li>
-                                @endauth
-                </ul>
-                </li>
                 </ul>
             </div>
         </div>
@@ -95,14 +95,13 @@
                                     @endif
                                 </li>
                             @endforeach
-                             @auth
-                                                    <li class="mt-2 border-t border-base-300 pt-2">
-                                                        <a href="{{ route('categories.create') }}"
-                                                            class="text-primary font-semibold">
-                                                            + Add Category
-                                                        </a>
-                                                    </li>
-                                                @endauth
+                            @auth
+                                <li class="mt-2 border-t border-base-300 pt-2">
+                                    <a href="{{ route('categories.create') }}" class="text-primary font-semibold">
+                                        + Add Category
+                                    </a>
+                                </li>
+                            @endauth
                         </ul>
                     </details>
                 </li>
@@ -132,6 +131,27 @@
             @endauth
         </div>
     </div>
+    @if (session('success'))
+        <div class="fixed top-5 right-5 z-50">
+            <div class="alert alert-success shadow-lg">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>{{ session('success') }}</span>
+                </div>
+            </div>
+        </div>
+        <script>
+            setTimeout(() => {
+                const alert = document.querySelector('.alert-success');
+                if (alert) {
+                    alert.remove();
+                }
+            }, 4000); // 4 seconds
+        </script>
+    @endif
     <main>
         @yield('content')
     </main>

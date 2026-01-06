@@ -29,20 +29,23 @@ Route::get('/algorithms', [AlgorithmController::class, 'index'])->name('algorith
 
 
 Route::middleware('auth')->group(function () {
-    Route::get('/categories/create', [CategoryController::class, 'create'])
-        ->name('categories.create');
+    Route::get('/categories/create', [CategoryController::class, 'create'])->name('categories.create');
 
-    Route::post('/categories', [CategoryController::class, 'store'])
-        ->name('categories.store');
+    Route::post('/categories', [CategoryController::class, 'store']) ->name('categories.store');
 
-    Route::get('/algorithms/create', [AlgorithmController::class, 'create'])
-        ->name('algorithms.create');
+    Route::get('/algorithms/create', [AlgorithmController::class, 'create'])->name('algorithms.create');
 
-    Route::post('/algorithms', [AlgorithmController::class, 'store'])
-        ->name('algorithms.store');
+    Route::post('/algorithms', [AlgorithmController::class, 'store'])->name('algorithms.store');
+
+    Route::get('/algorithms/{algorithm}/edit', [AlgorithmController::class, 'edit'])->name('algorithms.edit');
+
+    Route::put('/algorithms/{algorithm}', [AlgorithmController::class, 'update'])->name('algorithms.update');
+
+    Route::delete('/algorithms/{algorithm}', [AlgorithmController::class, 'destroy'])->name('algorithms.destroy');
+
+    Route::get('/categories/edit', [CategoryController::class, 'edit'])->name('categories.edit');
+
+    Route::put('/categories/{category}', [CategoryController::class, 'update'])->name('categories.update');
+
+    Route::delete('/categories/{category}', [CategoryController::class, 'destroy'])->name('categories.destroy');
 });
-
-
-
-
-
