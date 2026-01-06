@@ -3,6 +3,8 @@
 
 <head>
     <title>CubeStack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
@@ -26,7 +28,7 @@
                     <li><a href="/info">Information</a></li>
                     <li>
                         <a>Algorithms</a>
-                       <ul class="menu menu-vertical px-2">
+                        <ul class="menu menu-vertical px-2">
                             @foreach ($navCategories as $category)
                                 <li>
                                     @if ($category->children->isNotEmpty())
@@ -48,10 +50,17 @@
                                             {{ $category->name }}
                                         </a>
                                     @endif
-                                </li>
-                            @endforeach
-                        </ul>
+                                    @auth
+                                    <li class="mt-2">
+                                        <a href="{{ route('categories.create') }}" class="text-primary">
+                                            + Add Category
+                                        </a>
+                                    </li>
+                                @endauth
                     </li>
+                    @endforeach
+                </ul>
+                </li>
                 </ul>
             </div>
         </div>
@@ -86,34 +95,42 @@
                                     @endif
                                 </li>
                             @endforeach
+                             @auth
+                                                    <li class="mt-2 border-t border-base-300 pt-2">
+                                                        <a href="{{ route('categories.create') }}"
+                                                            class="text-primary font-semibold">
+                                                            + Add Category
+                                                        </a>
+                                                    </li>
+                                                @endauth
                         </ul>
                     </details>
                 </li>
         </div>
-       <div class="navbar-end">
-    @guest
-        <a href="{{ route('register') }}" class="btn">Register</a>
-    @endguest
+        <div class="navbar-end">
+            @guest
+                <a href="{{ route('login') }}" class="btn">login</a>
+            @endguest
 
-    @auth
-<div class="dropdown dropdown-end">
-    <label tabindex="0" class="btn btn-ghost avatar">
-        <div class="w-10 rounded-full">
-            <img src="{{ asset('image/profilePicture.jpg') }}" />
+            @auth
+                <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost avatar">
+                        <div class="w-10 rounded-full">
+                            <img src="{{ asset('image/profilePicture.jpg') }}" />
+                        </div>
+                    </label>
+                    <ul tabindex="0" class="menu dropdown-content bg-base-100 rounded-box w-52 shadow">
+                        <li><a href="/account">Account</a></li>
+                        <li>
+                            <form method="POST" action="/logout">
+                                @csrf
+                                <button class="btn btn-error btn-sm">Logout</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            @endauth
         </div>
-    </label>
-    <ul tabindex="0" class="menu dropdown-content bg-base-100 rounded-box w-52 shadow">
-        <li><a href="/account">Account</a></li>
-        <li>
-             <form method="POST" action="/logout">
-            @csrf
-            <button class="btn btn-error btn-sm">Logout</button>
-        </form>
-        </li>
-    </ul>
-</div>
-@endauth
-</div>
     </div>
     <main>
         @yield('content')

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\AlgorithmController;
 
 Route::get('/', function () {
@@ -25,6 +26,21 @@ Route::get('/account', function () {
 })->middleware('auth');
 
 Route::get('/algorithms', [AlgorithmController::class, 'index'])->name('algorithms.index');
+
+
+Route::middleware('auth')->group(function () {
+    Route::get('/categories/create', [CategoryController::class, 'create'])
+        ->name('categories.create');
+
+    Route::post('/categories', [CategoryController::class, 'store'])
+        ->name('categories.store');
+
+    Route::get('/algorithms/create', [AlgorithmController::class, 'create'])
+        ->name('algorithms.create');
+
+    Route::post('/algorithms', [AlgorithmController::class, 'store'])
+        ->name('algorithms.store');
+});
 
 
 
