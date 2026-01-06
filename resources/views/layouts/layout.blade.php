@@ -23,7 +23,7 @@
                 </div>
                 <ul tabindex="-1"
                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow bg-neutral">
-                    <li><a>Information</a></li>
+                    <li><a href="/info">Information</a></li>
                     <li>
                         <a>Algorithms</a>
                        <ul class="menu menu-vertical px-2">
@@ -57,7 +57,7 @@
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-                <li class="bg-base-300 rounded-sm mr-5"><a>Information</a></li>
+                <li class="bg-base-300 rounded-sm mr-5"><a href="/info">Information</a></li>
 
                 <li>
                     <details class="bg-base-300 rounded-sm ml-5 z-50">
@@ -90,9 +90,30 @@
                     </details>
                 </li>
         </div>
-        <div class="navbar-end">
-            <a href="/register" class="btn">Register</a>
+       <div class="navbar-end">
+    @guest
+        <a href="{{ route('register') }}" class="btn">Register</a>
+    @endguest
+
+    @auth
+<div class="dropdown dropdown-end">
+    <label tabindex="0" class="btn btn-ghost avatar">
+        <div class="w-10 rounded-full">
+            <img src="{{ asset('image/profilePicture.jpg') }}" />
         </div>
+    </label>
+    <ul tabindex="0" class="menu dropdown-content bg-base-100 rounded-box w-52 shadow">
+        <li><a href="/account">Account</a></li>
+        <li>
+             <form method="POST" action="/logout">
+            @csrf
+            <button class="btn btn-error btn-sm">Logout</button>
+        </form>
+        </li>
+    </ul>
+</div>
+@endauth
+</div>
     </div>
     <main>
         @yield('content')

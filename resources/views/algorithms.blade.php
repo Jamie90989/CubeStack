@@ -6,7 +6,7 @@
     @forelse ($algorithms as $algorithm)
         <div class="card bg-base-100 shadow-md p-4 flex flex-col hover:shadow-xl transition-shadow duration-300">
             <img src="{{ $algorithm->image }}" alt="{{ $algorithm->name }}"
-                class="w-full h-40 md:h-48 lg:h-56 object-cover rounded-md mb-2">
+                class="w-full h-40 md:h-48 lg:h-56 object-contain rounded-md mb-2">
             <h2 class="font-bold text-lg mt-2">{{ $algorithm->name }}</h2>
             <p class="text-sm mt-1 line-clamp-3">{{ $algorithm->description }}</p>
             <p class="text-sm mt-1 break-words">{{ $algorithm->algorithm }}</p>

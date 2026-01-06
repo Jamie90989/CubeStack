@@ -3,6 +3,8 @@
 @section('content')
 
 <main>
-   {{-- <h1 class="text-5xl font-chewy text-center text-primary mt-10 mb-10">Info!</h1> --}}
+  <div>
+   <img src="image/cheatsheet.webp" alt="cheatsheet" class="mx-auto my-10 rounded-lg shadow-lg">
+  </div>
 </main>
 @endsection
