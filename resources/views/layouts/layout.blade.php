@@ -50,15 +50,15 @@
                                             {{ $category->name }}
                                         </a>
                                     @endif
-                                    @auth
+                    </li>
+                    @endforeach
+                    @auth
                                     <li class="mt-2">
                                         <a href="{{ route('categories.create') }}" class="text-primary">
                                             + Add Category
                                         </a>
                                     </li>
                                 @endauth
-                    </li>
-                    @endforeach
                 </ul>
                 </li>
                 </ul>
