@@ -81,4 +81,19 @@ class AuthController extends Controller
         $request->session()->regenerateToken();
         return redirect('/login');
     }
+
+    public function toggleHideStandard(Request $request)
+    {
+        $user = $request->user();
+
+        // Toggle the boolean
+        $user->hideStandardAlgs = !$user->hideStandardAlgs;
+        $user->save();
+
+        return response()->json([
+            'success' => true,
+            'hideStandardAlgs' => $user->hideStandardAlgs
+        ]);
+    }
+
 }

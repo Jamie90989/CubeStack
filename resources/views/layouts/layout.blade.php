@@ -89,14 +89,14 @@
                                             </ul>
                                         </details>
                                     @else
-                                        <a href="{{ route('algorithms.index', ['category' => $category->id]) }}">
+                                        <a href="{{ route('algorithms.index', ['category' => $category->id]) }}" class="bg-base-200 rounded-sm ml-3 m-1">
                                             {{ $category->name }}
                                         </a>
                                     @endif
                                 </li>
                             @endforeach
                             @auth
-                                <li class="mt-2 border-t border-base-300 pt-2">
+                                <li class="mt-2 border-t border-base-300 pt-2 ">
                                     <a href="{{ route('categories.create') }}" class="text-primary font-semibold">
                                         + Add Category
                                     </a>

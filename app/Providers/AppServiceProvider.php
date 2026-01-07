@@ -33,14 +33,21 @@ class AppServiceProvider extends ServiceProvider
 
         View::composer('*', function ($view) {
             if (Auth::check()) {
+                $user = Auth::user();
+
                 $navCategories = Category::with('children')
-                    ->where(function ($q) {
-                        $q->where('user_id', Auth::id())
-                            ->orWhere('is_standard', true);
+                    ->where(function ($q) use ($user) {
+                        if (!$user->hideStandardAlgs) {
+                            $q->where('user_id', $user->id)
+                                ->orWhere('is_standard', true);
+                        } else {
+                            $q->where('user_id', $user->id);
+                        }
                     })
                     ->whereNull('parent_category_id')
                     ->get();
             } else {
+                // Guest: only show standard categories
                 $navCategories = Category::with('children')
                     ->where('is_standard', true)
                     ->whereNull('parent_category_id')
@@ -64,7 +71,7 @@ class AppServiceProvider extends ServiceProvider
             }
 
             $view->with('navCategories', $navCategories);
-            
+
             $view->with('categories', $categories);
         });
     }

@@ -8,9 +8,9 @@
     <main>
         <div class="w-full bg-base-100 py-3 px-6 flex justify-center items-center space-x-3">
             @auth
-                <a href="{{ route('algorithms.create') }}" class="btn btn-md btn-primary">
-                    + Add Algorithm
-                </a>
+                    <a href="{{ route('algorithms.create') }}" class="btn btn-md btn-primary">
+                        + Add Algorithm
+                    </a>
             @endauth
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-4 z-10">
@@ -28,7 +28,7 @@
                         : asset('image/noImgFound.png') }}"
                         alt="{{ $algorithm->name }}" class="w-full h-40 md:h-48 lg:h-56 object-contain mb-2 rounded-xl">
                     <h2 class="font-bold text-lg mt-2">{{ $algorithm->name }}</h2>
-                    <p class="text-sm mt-1 line-clamp-3">{{ $algorithm->description }}</p>
+                    <p class="text-sm mt-1 line-clamp-3 bg-slate-200 rounded-md">{{ $algorithm->description }}</p>
                     <p class="text-sm mt-1 break-words">{{ $algorithm->algorithm }}</p>
                     <p class="mt-1 text-xs text-gray-500">Group: {{ $algorithm->group }}</p>
                 </div>

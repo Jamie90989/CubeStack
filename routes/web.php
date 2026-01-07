@@ -27,7 +27,6 @@ Route::get('/account', function () {
 
 Route::get('/algorithms', [AlgorithmController::class, 'index'])->name('algorithms.index');
 
-
 Route::middleware('auth')->group(function () {
     Route::get('/categories/create', [CategoryController::class, 'create'])->name('categories.create');
 
@@ -49,3 +48,7 @@ Route::middleware('auth')->group(function () {
 
     Route::delete('/categories/{category}', [CategoryController::class, 'destroy'])->name('categories.destroy');
 });
+
+
+Route::middleware('auth')->post('/user/toggle-hide-standard', [AuthController::class, 'toggleHideStandard'])
+     ->name('user.toggleHideStandard');
