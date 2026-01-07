@@ -96,4 +96,60 @@ class AuthController extends Controller
         ]);
     }
 
+    // Show the edit form
+    public function edit(User $user)
+    {
+        return view('editUser', compact('user'));
+    }
+
+    // Handle the form submission
+    public function update(Request $request, User $user)
+    {
+      $request->validate([
+        'name' => 'nullable|string|max:255',
+        'email' => 'nullable|email|max:255|unique:users,email,' . $user->id,
+
+        'password' => 'nullable|string|min:8',
+
+        'securityQuestion1' => 'nullable|string|max:255',
+        'securityAnswer1' => 'nullable|string|max:255',
+
+        'securityQuestion2' => 'nullable|string|max:255',
+        'securityAnswer2' => 'nullable|string|max:255',
+
+        'securityQuestion3' => 'nullable|string|max:255',
+        'securityAnswer3' => 'nullable|string|max:255',
+    ]);
+
+    // Update only fields that are filled
+    if ($request->filled('name')) {
+        $user->name = $request->name;
+    }
+
+    if ($request->filled('email')) {
+        $user->email = $request->email;
+    }
+
+    if ($request->filled('password')) {
+        $user->password = Hash::make($request->password);
+    }
+
+    for ($i = 1; $i <= 3; $i++) {
+        $q = 'securityQuestion' . $i;
+        $a = 'securityAnswer' . $i;
+
+        if ($request->filled($q)) {
+            $user->$q = $request->$q;
+        }
+
+        if ($request->filled($a)) {
+            $user->$a = Hash::make($request->$a);
+        }
+    }
+
+    $user->save();
+
+    return redirect('/')
+        ->with('success', 'Account updated successfully.');
+    }
 }

@@ -14,7 +14,7 @@
                     + Add Algorithm
                 </a>
 
-                <a href="{{ route('categories.create') }}" class="btn btn-lg btn-secondary">
+                <a href="{{ route('categories.create') }}" class="btn btn-lg btn-primary">
                     + Add Category
                 </a>
                 <p>Hide standard Algorithms</p>
@@ -35,21 +35,15 @@
             @endauth
         </div>
 
-
         {{-- Select Category --}}
         <div class="max-w-xl mx-auto mt-10 p-6 bg-white rounded shadow">
             <h1 class="text-xl font-bold mb-6">Manage Your Categories</h1>
-
-
-
             <form method="GET" action="{{ route('categories.edit') }}">
                 <div class="form-control mb-4">
                     <label class="label">Select a Category to Edit or Delete</label>
                     <select name="category_id" class="select select-bordered" required>
                         <option value="">-- Choose a category --</option>
-
                         @php
-                            // Recursive function to render options in nav order
                             function renderCategoryOptions($categories, $prefix = '')
                             {
                                 foreach ($categories as $category) {
@@ -65,17 +59,19 @@
                                 }
                             }
                         @endphp
-
                         @php renderCategoryOptions($categories); @endphp
-
                     </select>
                 </div>
-
-                <button type="submit" class="btn btn-secondary w-full">Edit Selected Category</button>
+                <button type="submit" class="btn btn-primary w-full">Edit Selected Category</button>
             </form>
+        </div>
+        <div class="max-w-xl mx-auto mt-10 p-6 bg-white rounded shadow">
+            <h1 class="text-xl font-bold mb-6">edit account settings</h1>
+            <a href="{{ route('users.edit', auth()->user()) }}" class="btn btn-lg btn-primary w-full">
+                Edit account settings
+            </a>
 
         </div>
-
 
 
     </main>

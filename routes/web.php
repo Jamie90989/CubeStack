@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\AlgorithmController;
+use Illuminate\Container\Attributes\Auth;
 
 Route::get('/', function () {
     return view('home');
@@ -30,7 +31,7 @@ Route::get('/algorithms', [AlgorithmController::class, 'index'])->name('algorith
 Route::middleware('auth')->group(function () {
     Route::get('/categories/create', [CategoryController::class, 'create'])->name('categories.create');
 
-    Route::post('/categories', [CategoryController::class, 'store']) ->name('categories.store');
+    Route::post('/categories', [CategoryController::class, 'store'])->name('categories.store');
 
     Route::get('/algorithms/create', [AlgorithmController::class, 'create'])->name('algorithms.create');
 
@@ -47,8 +48,18 @@ Route::middleware('auth')->group(function () {
     Route::put('/categories/{category}', [CategoryController::class, 'update'])->name('categories.update');
 
     Route::delete('/categories/{category}', [CategoryController::class, 'destroy'])->name('categories.destroy');
+
+    // Security check
+    Route::get('/security-check', [AuthController::class, 'securityCheck'])->name('users.security.check');
+    Route::post('/security-check', [AuthController::class, 'verifySecurity'])->name('users.security.verify');
+
+    // Edit account
+    Route::get('/users/{user}/edit', [AuthController::class, 'edit'])->name('users.edit');
+    Route::put('/users/{user}', [AuthController::class, 'update'])->name('users.update');
+
 });
 
 
 Route::middleware('auth')->post('/user/toggle-hide-standard', [AuthController::class, 'toggleHideStandard'])
-     ->name('user.toggleHideStandard');
+    ->name('user.toggleHideStandard');
+
