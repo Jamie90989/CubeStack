@@ -17,11 +17,10 @@
             @forelse ($algorithms as $algorithm)
                 <div class="card bg-base-100 shadow-md p-4 flex flex-col hover:shadow-xl transition-shadow duration-300">
                     <div class="mt-3 flex justify-end">
-            <a href="{{ route('algorithms.edit', $algorithm->id) }}" 
-               class="btn btn-sm btn-outline btn-primary">
-                Edit
-            </a>
-        </div>
+                        <a href="{{ route('algorithms.edit', $algorithm->id) }}" class="btn btn-sm btn-outline btn-primary">
+                            Edit
+                        </a>
+                    </div>
                     <img src="{{ $algorithm->image
                         ? (Str::startsWith($algorithm->image, 'image/')
                             ? asset($algorithm->image)
